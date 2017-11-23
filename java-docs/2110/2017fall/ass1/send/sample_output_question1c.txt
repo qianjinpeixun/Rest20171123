@@ -1,0 +1,22 @@
+Question 1A executionTime for Lattice Paths (n=1): 5 milliseconds
+Question 1A executionTime for Lattice Paths (n=2): 1 milliseconds
+Question 1A executionTime for Lattice Paths (n=3): 1 milliseconds
+Question 1A executionTime for Lattice Paths (n=4): 4 milliseconds
+Question 1A executionTime for Lattice Paths (n=5): 12 milliseconds
+Question 1A executionTime for Lattice Paths (n=6): 43 milliseconds
+Question 1A executionTime for Lattice Paths (n=7): 29 milliseconds
+Question 1A executionTime for Lattice Paths (n=8): 84 milliseconds
+Question 1A executionTime for Lattice Paths (n=9): 283 milliseconds
+Question 1A executionTime for Lattice Paths (n=10): 593 milliseconds
+Question 1A executionTime for Lattice Paths (n=11): 2109 milliseconds
+Question 1A executionTime for Lattice Paths (n=12): 9562 milliseconds
+
+
+
+Queston 1B executionTime for Lattice Paths with diagonal (n=1): 25 milliseconds
+Queston 1B executionTime for Lattice Paths with diagonal (n=2): 3 milliseconds
+Queston 1B executionTime for Lattice Paths with diagonal (n=3): 16 milliseconds
+Queston 1B executionTime for Lattice Paths with diagonal (n=4): 59 milliseconds
+Queston 1B executionTime for Lattice Paths with diagonal (n=5): 116 milliseconds
+Queston 1B executionTime for Lattice Paths with diagonal (n=6): 1601 milliseconds
+Queston 1B executionTime for Lattice Paths with diagonal (n=7): 42570 milliseconds

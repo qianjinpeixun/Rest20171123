@@ -1,0 +1,19 @@
+After add some elements, the current printerQueue is:
+Job [owner=swilliams, jobId=309]
+Job [owner=ronaldinho, jobId=300]
+Job [owner=marionjones, jobId=312]
+Job [owner=swilliams, jobId=267]
+Job [owner=davidh, jobId=135]
+Job [owner=ronaldinho, jobId=301]
+
+After removes the first entry from the queue, the current printerQueue is:
+Job [owner=ronaldinho, jobId=300]
+Job [owner=marionjones, jobId=312]
+Job [owner=swilliams, jobId=267]
+Job [owner=davidh, jobId=135]
+Job [owner=ronaldinho, jobId=301]
+
+After removes all entries of ronaldinho from the queue, the current printerQueue is:
+Job [owner=marionjones, jobId=312]
+Job [owner=swilliams, jobId=267]
+Job [owner=davidh, jobId=135]

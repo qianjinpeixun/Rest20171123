@@ -1,0 +1,10 @@
+     1    2    3    4    5    6    7
+1                                       
+2                                       
+3    Y    R                             
+4    R    Y         Y                   
+5    Y    R    Y    R    Y    R         
+6    R    Y    R    Y    R    Y    R    
+
+YELLOW – Connect 4! Congratulations AutoPlayer! You Win in 18 turns.
+

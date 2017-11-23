@@ -1,0 +1,4 @@
+200120	kate	West 	kwest@email.com		Music		Arts
+200121	Julie	McLain	jmclain@email.com	Finance	Business
+200122	Tom		Erlich	terlich@email.com	Sculpture	Arts
+200123	Mark	Smith	msmith@email.com	Biology		Science

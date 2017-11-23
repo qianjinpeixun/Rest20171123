@@ -1,0 +1,183 @@
+Exercise 0 sample output:
+Enter the filename to read from: sepexpenses.txt
+Sep Expenses
+Sep 28, 2017	Gas		81.13
+--> Sep 27, 2017	Pizza		11.50
+--> Sep 27, 2017	CarRental		360.01
+--> Sep 25, 2017	CreditCard		245.00
+--> Sep 24, 2017	Hair Salon		34.50
+--> Sep 24, 2017	Tennis		15.00
+--> Sep 24, 2017	Breakfast		11.48
+--> Sep 24, 2017	Groceries		72.58
+--> Sep 21, 2017	Groceries		22.55
+--> Sep 21, 2017	Movies		36.36
+--> Sep 21, 2017	Gas		25.00
+--> Sep 21, 2017	Lunch		4.51
+--> The max expense was: 360.01
+The min expense was: 4.51
+The avg expense was: 76.635
+The amount spent on groceries was: 95.13
+The total expenses were: 919.62
+
+
+Exercise 1 sample output:
+Enter the filename to read from: studentrecords.txt
+After reading the record file, the current number of records is: 13
+The current records is as below:
+Student [id=200132, firatName=Jane, lastName=Reid, email=jreid@email.com, major=Music, faculty=Arts]--> Student [id=200131, firatName=Mike, lastName=Williams, email=mwilliams@email.com, major=Linguistics, faculty=Humanities]--> Student [id=200130, firatName=Steve, lastName=Edwards, email=sedwards@email.com, major=Biology, faculty=Science]--> Student [id=200129, firatName=Craig, lastName=Cambell, email=ccambell@email.com, major=Music, faculty=Arts]--> Student [id=200128, firatName=Allison, lastName=Page, email=apage@email.com, major=History, faculty=Humanities]--> Student [id=200127, firatName=John, lastName=Smigh, email=jsmith@email.com, major=Sculpture, faculty=Arts]--> Student [id=200126, firatName=Karen, lastName=Weaver, email=kweaver@email.com, major=Music, faculty=Arts]--> Student [id=200125, firatName=matt, lastName=knight, email=mknight@email.com, major=Fiance, faculty=Business]--> Student [id=200124, firatName=Jen, lastName=Foster, email=jfoster@email.com, major=Physics, faculty=Science]--> Student [id=200123, firatName=Mark, lastName=Smith, email=msmith@email.com, major=Biology, faculty=Science]--> Student [id=200122, firatName=Tom, lastName=Erlich, email=terlich@email.com, major=Sculpture, faculty=Arts]--> Student [id=200121, firatName=Julie, lastName=McLain, email=jmclain@email.com, major=Finance, faculty=Business]--> Student [id=200120, firatName=kate, lastName=West, email=kwest@email.com, major=Music, faculty=Arts]--> 
+
+After add one test student, the current number of records is: 14
+The current records is as below:
+Student [id=200999, firatName=MikeTest, lastName=West, email=maike.test@gmail.com, major=Music, faculty=Arts]--> Student [id=200132, firatName=Jane, lastName=Reid, email=jreid@email.com, major=Music, faculty=Arts]--> Student [id=200131, firatName=Mike, lastName=Williams, email=mwilliams@email.com, major=Linguistics, faculty=Humanities]--> Student [id=200130, firatName=Steve, lastName=Edwards, email=sedwards@email.com, major=Biology, faculty=Science]--> Student [id=200129, firatName=Craig, lastName=Cambell, email=ccambell@email.com, major=Music, faculty=Arts]--> Student [id=200128, firatName=Allison, lastName=Page, email=apage@email.com, major=History, faculty=Humanities]--> Student [id=200127, firatName=John, lastName=Smigh, email=jsmith@email.com, major=Sculpture, faculty=Arts]--> Student [id=200126, firatName=Karen, lastName=Weaver, email=kweaver@email.com, major=Music, faculty=Arts]--> Student [id=200125, firatName=matt, lastName=knight, email=mknight@email.com, major=Fiance, faculty=Business]--> Student [id=200124, firatName=Jen, lastName=Foster, email=jfoster@email.com, major=Physics, faculty=Science]--> Student [id=200123, firatName=Mark, lastName=Smith, email=msmith@email.com, major=Biology, faculty=Science]--> Student [id=200122, firatName=Tom, lastName=Erlich, email=terlich@email.com, major=Sculpture, faculty=Arts]--> Student [id=200121, firatName=Julie, lastName=McLain, email=jmclain@email.com, major=Finance, faculty=Business]--> Student [id=200120, firatName=kate, lastName=West, email=kwest@email.com, major=Music, faculty=Arts]--> 
+
+All the sutdents taking major: Music are as below:
+Student [id=200120, firatName=kate, lastName=West, email=kwest@email.com, major=Music, faculty=Arts]--> Student [id=200126, firatName=Karen, lastName=Weaver, email=kweaver@email.com, major=Music, faculty=Arts]--> Student [id=200129, firatName=Craig, lastName=Cambell, email=ccambell@email.com, major=Music, faculty=Arts]--> Student [id=200132, firatName=Jane, lastName=Reid, email=jreid@email.com, major=Music, faculty=Arts]--> Student [id=200999, firatName=MikeTest, lastName=West, email=maike.test@gmail.com, major=Music, faculty=Arts]--> 
+
+All the sutdents belonging to faculty: Arts are as below:
+Student [id=200120, firatName=kate, lastName=West, email=kwest@email.com, major=Music, faculty=Arts]--> Student [id=200122, firatName=Tom, lastName=Erlich, email=terlich@email.com, major=Sculpture, faculty=Arts]--> Student [id=200126, firatName=Karen, lastName=Weaver, email=kweaver@email.com, major=Music, faculty=Arts]--> Student [id=200127, firatName=John, lastName=Smigh, email=jsmith@email.com, major=Sculpture, faculty=Arts]--> Student [id=200129, firatName=Craig, lastName=Cambell, email=ccambell@email.com, major=Music, faculty=Arts]--> Student [id=200132, firatName=Jane, lastName=Reid, email=jreid@email.com, major=Music, faculty=Arts]--> Student [id=200999, firatName=MikeTest, lastName=West, email=maike.test@gmail.com, major=Music, faculty=Arts]--> 
+
+Student ID number with 200999 is as below:
+Student [id=200999, firatName=MikeTest, lastName=West, email=maike.test@gmail.com, major=Music, faculty=Arts]
+
+Student with name MikeTest West as below:
+Student [id=200999, firatName=MikeTest, lastName=West, email=maike.test@gmail.com, major=Music, faculty=Arts]
+
+Student with email: maike.test@gmail.com is as below:
+Student [id=200999, firatName=MikeTest, lastName=West, email=maike.test@gmail.com, major=Music, faculty=Arts]
+
+After delete one student, the current number of records is: 13
+After delete, try to find student with id 200999, the result is as below:
+not found!
+
+
+
+Exercise 2 sample output:
+the first case:
+
+In order to test findUnion, you need to enter two list.
+Please enter the first list
+1 2 3 
+Please enter the second list
+a b c
+the union list of list1 and list2 is as below:
+a--> b--> c--> 1--> 2--> 3--> 
+
+In order to test findIntersection, you need to enter two list.
+Please enter the first list
+1 2 3 a
+Please enter the second list
+a b c
+the intersection list of list1 and list2 is as below:
+a--> 
+
+In order to test interleave, you need to enter two list.
+Please enter the first list
+1 2 3 4
+Please enter the second list
+a b c
+the interleave list of list1 and list2 is as below:
+1--> a--> 2--> b--> 3--> c--> 4--> 
+
+In order to test chopSkip, you need to enter one list.
+Please enter the list
+1 2 3 4 5 
+
+Test chopSkip, the chopSkip list is as below:
+1--> 3--> 5--> 
+
+the second case:
+
+In order to test findUnion, you need to enter two list.
+Please enter the first list
+a b c d
+Please enter the second list
+b d c
+the union list of list1 and list2 is as below:
+a--> b--> c--> d--> 
+
+In order to test findIntersection, you need to enter two list.
+Please enter the first list
+1 2 
+Please enter the second list
+a
+the intersection list of list1 and list2 is as below:
+
+
+In order to test interleave, you need to enter two list.
+Please enter the first list
+1
+Please enter the second list
+a b c d
+the interleave list of list1 and list2 is as below:
+a--> b--> c--> d--> 1--> 
+
+In order to test chopSkip, you need to enter one list.
+Please enter the list
+1
+
+Test chopSkip, the chopSkip list is as below:
+1--> 
+
+the case 3 is:
+
+In order to test findUnion, you need to enter two list.
+Please enter the first list
+a b c d 
+Please enter the second list
+a b c d
+the union list of list1 and list2 is as below:
+a--> b--> c--> d--> 
+
+In order to test findIntersection, you need to enter two list.
+Please enter the first list
+a a a a 
+Please enter the second list
+a a a a
+the intersection list of list1 and list2 is as below:
+a--> 
+
+In order to test interleave, you need to enter two list.
+Please enter the first list
+a a a 
+Please enter the second list
+1
+the interleave list of list1 and list2 is as below:
+a--> a--> 1--> a--> 
+
+In order to test chopSkip, you need to enter one list.
+Please enter the list
+1 2
+
+Test chopSkip, the chopSkip list is as below:
+2--> 
+
+Exercise 3 sample output
+Welcome to the Country-Capital Quiz
+Play?
+Yes
+What country has Colombo as its capital ?
+Sudan
+Incorrect. The correct answer is Sri Lanka. Play?
+Yes
+What country has Sanaa as its capital ?
+Yemen
+Correct. Play?
+Yes
+What country has Belmopan as its capital ?
+No
+Incorrect. The correct answer is Belize. Play?
+Yes
+What is the capital of Jordan?
+Amman
+Correct. Play?
+Yes
+What country has Cairo as its capital ?
+no
+Incorrect. The correct answer is Egypt. Play?
+Yes
+What is the capital of Central African Republic?
+no
+Incorrect. The correct answer is Bangui. Play?
+No
+Game over.
+ 

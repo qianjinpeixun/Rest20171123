@@ -1,0 +1,11 @@
+This is some text.
+This is first /* comment */ etc.
+Multiline comment: /* first line
+second line
+third line */ third line continued
+Fourth line
+A few tricks: ////*********comment***/ etc.
+How about this one: /*/ this is still comment /*/ out
+A comment can start /* and not
+finish, and this should also count as a comment,
+but print a warning!

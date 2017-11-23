@@ -1,0 +1,15 @@
+Enter a string:mississippi
+Enter a substring:ssi
+Substring ssi was found in mississippi 2 times
+
+Enter a string:mississippi
+Enter a substring:p
+Substring p was found in mississippi 2 times
+
+Enter a string:wonder
+Enter a substring:wonderful
+No matches - substring wonderful was not found in wonder
+
+Enter a string:mississippi
+Enter a substring:M
+No matches - substring M was not found in mississippi

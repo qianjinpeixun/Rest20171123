@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://webservices.csgsystems.com/PrecisionEmail/1.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://webservices.csgsystems.com/PrecisionEmail/1.0" targetNamespace="http://webservices.csgsystems.com/PrecisionEmail/1.0">
+  <wsdl:types>
+    <xsd:schema xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://webservices.csgsystems.com/PrecisionEmail/1.0"><xsd:element name="SendTriggerPrecisionEmailRequest" type="tns:SendTriggerPrecisionEmailRequestType"><xsd:annotation><xsd:documentation>
+	    Request used to send precision email real time, one at a time as a trigger.
+    </xsd:documentation></xsd:annotation></xsd:element><xsd:element name="SendTriggerPrecisionEmailResponse" type="tns:SendTriggerPrecisionEmailResponseType"><xsd:annotation><xsd:documentation>
+	    Response to a SendTriggerPrecisionEmailRequest.  If successful, your response code will be 0.
+    </xsd:documentation></xsd:annotation></xsd:element><xsd:element name="SendTriggerBundlePrecisionEmailRequest" type="tns:SendTriggerBundlePrecisionEmailRequestType"><xsd:annotation><xsd:documentation>
+	    Request used to send precision email real time, bundled triggers.
+    </xsd:documentation></xsd:annotation></xsd:element><xsd:element name="SendTriggerBundlePrecisionEmailResponse" type="tns:SendTriggerBundlePrecisionEmailResponseType"><xsd:annotation><xsd:documentation>
+	    Response to a SendTriggerBundlePrecisionEmailRequest.  If successful, your response code will be 0.
+    </xsd:documentation></xsd:annotation></xsd:element><xsd:element name="RetrieveEventsPrecisionEmailRequest" type="tns:RetrieveEventsPrecisionEmailRequestType"><xsd:annotation><xsd:documentation>
+	    Request used to retrieve events.
+    </xsd:documentation></xsd:annotation></xsd:element><xsd:element name="RetrieveEventsPrecisionEmailResponse" type="tns:RetrieveEventsPrecisionEmailResponseType"><xsd:annotation><xsd:documentation>
+	    Response to a RetrieveEventsPrecisionEmailRequest.  If successful, your response code will be 0.
+    </xsd:documentation></xsd:annotation></xsd:element><xsd:element name="SendBatchPrecisionEmailRequest" type="tns:SendBatchPrecisionEmailRequestType"><xsd:annotation><xsd:documentation>
+	    Request to send a file with 1-x records in a string(file) to send out many emails.
+	    Batch does not support email attributes, as these should be tab delimited fields in your file.
+    </xsd:documentation></xsd:annotation></xsd:element><xsd:element name="SendBatchPrecisionEmailResponse" type="tns:SendBatchPrecisionEmailResponseType"><xsd:annotation><xsd:documentation>
+	    Response to a SendBatchPrecisionEmailRequest.  If successful, your response code will be 0.
+    </xsd:documentation></xsd:annotation></xsd:element><xsd:element name="RetrieveBatchStatusPrecisionEmailRequest" type="tns:RetrieveBatchStatusPrecisionEmailRequestType"><xsd:annotation><xsd:documentation>
+	    Request to retreive the batch status for a batch name.
+    </xsd:documentation></xsd:annotation></xsd:element><xsd:element name="RetrieveBatchStatusPrecisionEmailResponse" type="tns:RetrieveBatchStatusPrecisionEmailResponseType"><xsd:annotation><xsd:documentation>
+	    Response to a RetrieveBatchStatusPrecisionEmailRequest.  If successful and batch done processing, your response code will be 0.
+    </xsd:documentation></xsd:annotation></xsd:element><xsd:complexType name="SendTriggerPrecisionEmailRequestType"><xsd:sequence><xsd:element name="Profile" type="tns:ProfileType"/><xsd:element name="EmailTemplate" type="tns:EmailTemplateType"/><xsd:element name="SubscriberKey" type="tns:SubscriberKeyType"/><xsd:element name="EmailAddress" type="tns:EmailAddressType"/><xsd:element minOccurs="0" name="EmailAttributes" type="tns:EmailAttributeListType"/><xsd:element minOccurs="0" name="FileAttachments" type="tns:FileListType"/><xsd:element minOccurs="0" name="URLAttachments" type="tns:URLAttachmentListType"/><xsd:element minOccurs="0" name="FTPServerFileAttachments" type="tns:FTPServerFileListType"/></xsd:sequence></xsd:complexType><xsd:complexType name="SendTriggerBundlePrecisionEmailRequestType"><xsd:sequence><xsd:element name="Profile" type="tns:ProfileType"/><xsd:element name="EmailTemplate" type="tns:EmailTemplateType"/><xsd:element minOccurs="0" name="ConversationId" type="xsd:string"/><xsd:element minOccurs="0" name="Priority" type="tns:PriorityType"/><xsd:element minOccurs="0" name="EmailAttributes" type="tns:EmailAttributeListType"/><xsd:element name="BundledEmails" type="tns:BundledEmailListType"/></xsd:sequence></xsd:complexType><xsd:complexType name="BundledEmailListType"><xsd:sequence><xsd:element maxOccurs="unbounded" minOccurs="0" name="BundledEmail" type="tns:BundledEmailListEntry"/></xsd:sequence></xsd:complexType><xsd:complexType name="BundledEmailListEntry"><xsd:annotation><xsd:documentation>
+      	Bundled email entry.
+    </xsd:documentation></xsd:annotation><xsd:sequence><xsd:element name="SubscriberKey" type="tns:SubscriberKeyType"/><xsd:element name="EmailAddress" type="tns:EmailAddressType"/><xsd:element minOccurs="0" name="EmailAttributes" type="tns:EmailAttributeListType"/><xsd:element minOccurs="0" name="FileAttachments" type="tns:FileListType"/><xsd:element minOccurs="0" name="URLAttachments" type="tns:URLAttachmentListType"/><xsd:element minOccurs="0" name="FTPServerFileAttachments" type="tns:FTPServerFileListType"/></xsd:sequence></xsd:complexType><xsd:complexType name="SendTriggerBundlePrecisionEmailResponseType"><xsd:sequence><xsd:element minOccurs="0" name="TriggeredEmailStatuses" type="tns:TriggeredEmailStatusListType"/><xsd:element name="ReturnCode" type="xsd:string"/><xsd:element name="TaskIdentifier" type="xsd:string"/></xsd:sequence></xsd:complexType><xsd:complexType name="RetrieveEventsPrecisionEmailRequestType"><xsd:sequence><xsd:element name="Profile" type="tns:ProfileType"/><xsd:element name="Type" type="xsd:string"/><xsd:element minOccurs="0" name="StartDate" type="xsd:dateTime"/><xsd:element minOccurs="0" name="EndDate" type="xsd:dateTime"/></xsd:sequence></xsd:complexType><xsd:complexType name="RetrieveEventsPrecisionEmailResponseType"><xsd:sequence><xsd:element name="ReturnCode" type="xsd:string"/><xsd:element minOccurs="0" name="Events" type="tns:EventListType"/></xsd:sequence></xsd:complexType><xsd:complexType name="EventListType"><xsd:sequence><xsd:element maxOccurs="unbounded" name="Event" type="tns:EventListEntry"/></xsd:sequence></xsd:complexType><xsd:complexType name="EventListEntry"><xsd:annotation><xsd:documentation>
+      	An Event
+    </xsd:documentation></xsd:annotation><xsd:sequence><xsd:element maxOccurs="unbounded" name="EventData" type="tns:EventDataType"/></xsd:sequence></xsd:complexType><xsd:complexType name="EventDataType"><xsd:sequence><xsd:element name="Name" type="xsd:string"/><xsd:element name="Value" type="xsd:string"/></xsd:sequence></xsd:complexType><xsd:complexType name="TriggeredEmailStatusListType"><xsd:sequence><xsd:element maxOccurs="unbounded" name="TriggeredEmailStatus" type="tns:TriggeredEmailStatusListEntry"/></xsd:sequence></xsd:complexType><xsd:complexType name="TriggeredEmailStatusListEntry"><xsd:annotation><xsd:documentation>
+      	Triggered Email Bundled email status.
+    </xsd:documentation></xsd:annotation><xsd:sequence><xsd:element name="ReturnCode" type="xsd:string"/><xsd:element name="TaskIdentifier" type="xsd:string"/></xsd:sequence></xsd:complexType><xsd:complexType name="SendBatchPrecisionEmailRequestType"><xsd:sequence><xsd:element name="Profile" type="tns:ProfileType"/><xsd:element minOccurs="0" name="EmailTemplate" type="tns:EmailTemplateType"/><xsd:element minOccurs="0" name="FTPServerEmailTemplate" type="tns:FTPServerEmailTemplateType"/><xsd:element minOccurs="0" name="FileAttachments" type="tns:FileListType"/><xsd:element minOccurs="0" name="DataInputFile" type="xsd:base64Binary" xmime:expectedContentTypes="application/octet-stream"><xsd:annotation><xsd:documentation>
+        	NOTE:  This is a tab delimited flat text file sent binary.  MTOM sent in chunks is MANDATORY.  If not followed, under extreme load you risk
+        	bringing down the application server, and we reserve the right to start rejecting web service calls as failures.
+MORE INFO:
+o	Record 1 with tab delimited header names, Then Data records then are tab delimited data
+o	Email Address and Subscriber Key must be present in order for this to be treated as a sendable data extension.  All fields must start with D_ except Email Address and Subscriber Key.
+o   For attachment support, please see documentation.
+o   Example File, everything is tab delimited.  Subscriber Key is the unique key for your customer, and can be anything:
+D_Client Number   Subscriber Key  Email Address   D_Hardcopy Statement      D_Video   D_Telephony       D_Internet
+100     8041500020011451        tester@csgsystems.com      Y       Y       N       Y
+100     8041500030001484        tester@csgsystems.com      N       N       Y       Y
+        </xsd:documentation></xsd:annotation></xsd:element><xsd:element minOccurs="0" name="FTPServerDataInputFileName" type="tns:FTPServerDataInputFileNameType"/><xsd:element minOccurs="0" name="Priority" type="tns:PriorityType"/></xsd:sequence></xsd:complexType><xsd:complexType name="RetrieveBatchStatusPrecisionEmailRequestType"><xsd:sequence><xsd:element name="Profile" type="tns:ProfileType"/><xsd:element name="BatchName" type="xsd:string"/><xsd:element name="TaskIdentifier" type="xsd:string"/></xsd:sequence></xsd:complexType><xsd:simpleType name="FTPServerDataInputFileNameType"><xsd:annotation><xsd:documentation>
+      The ftp server data input file you want to process.  MUST already be on the server.  FILENAME ONLY.
+    </xsd:documentation></xsd:annotation><xsd:restriction base="xsd:string"><xsd:pattern value=".{0,1024}"/></xsd:restriction></xsd:simpleType><xsd:simpleType name="PriorityType"><xsd:annotation><xsd:documentation>
+      The priority for this batch.  From 1-10.  1 is the highest priority.
+    </xsd:documentation></xsd:annotation><xsd:restriction base="xsd:string"><xsd:pattern value=".{1,10}"/></xsd:restriction></xsd:simpleType><xsd:simpleType name="ProfileType"><xsd:annotation><xsd:documentation>
+      The profile name for precision email web services.  Each web service client will be given a unique alphanumeric profile string.
+      This profile is your key to your precision email account and setup.
+    </xsd:documentation></xsd:annotation><xsd:restriction base="xsd:string"><xsd:pattern value=".{1,1024}"/></xsd:restriction></xsd:simpleType><xsd:simpleType name="EmailTemplateType"><xsd:annotation><xsd:documentation>
+      The precision email template name that this email should be sent through.   This email template is predefined on the precision email
+      side in your profile's account, which is the layout/template to be sent to users.
+    </xsd:documentation></xsd:annotation><xsd:restriction base="xsd:string"><xsd:pattern value=".{1,1024}"/></xsd:restriction></xsd:simpleType><xsd:complexType name="FTPServerEmailTemplateType"><xsd:annotation><xsd:documentation>
+      This references a file that contains an email template on a ftp server.  Must reference the filename, and the subject of the new email template.
+    </xsd:documentation></xsd:annotation><xsd:sequence><xsd:element minOccurs="0" name="TextOnly" type="xsd:string"/><xsd:element name="FileName" type="xsd:string"/><xsd:element minOccurs="0" name="HTMLFileName" type="xsd:string"/><xsd:element name="Subject" type="xsd:string"/></xsd:sequence></xsd:complexType><xsd:simpleType name="SubscriberKeyType"><xsd:annotation><xsd:documentation>
+      The precision email key to a unique customer.  Could be an account number, customer number, or email address for example.
+    </xsd:documentation></xsd:annotation><xsd:restriction base="xsd:string"><xsd:pattern value=".{1,1024}"/></xsd:restriction></xsd:simpleType><xsd:simpleType name="EmailAddressType"><xsd:annotation><xsd:documentation>
+      The precision email address you want this email to be sent to.  Be sure to validate the email address.
+      Every email address is composed of two parts. The local part comes before the '@' sign, and the domain part follows it. In "user@example.com", the local part is "user", and the domain part is "example.com".
+	  The local part must not exceed 64 characters and the domain part cannot be longer than 255 characters.
+    </xsd:documentation></xsd:annotation><xsd:restriction base="xsd:string"><xsd:pattern value=".{1,320}"/></xsd:restriction></xsd:simpleType><xsd:complexType name="EmailAttributeListType"><xsd:sequence><xsd:element maxOccurs="unbounded" minOccurs="0" name="EmailAttribute" type="tns:EmailAttributeListEntry"/></xsd:sequence></xsd:complexType><xsd:complexType name="EmailAttributeListEntry"><xsd:annotation><xsd:documentation>
+      These are name value pairs of data to be inserted dynamically into your email template.  For example, pass a name of carcolor, and value of red,
+      if you put %%carcolor%% in your email template, red will now appear in your email.
+    </xsd:documentation></xsd:annotation><xsd:sequence><xsd:element name="AttributeName" type="xsd:string"/><xsd:element name="AttributeValue" type="xsd:string"/></xsd:sequence></xsd:complexType><xsd:complexType name="URLAttachmentListType"><xsd:sequence><xsd:element maxOccurs="unbounded" minOccurs="0" name="URLAttachment" type="tns:URLAttachmentListEntry"/></xsd:sequence></xsd:complexType><xsd:complexType name="URLAttachmentListEntry"><xsd:annotation><xsd:documentation>
+	    URL files to be pulled and used as email attachments.  Both are strings.  For example, send filename of bill.pdf, then send URL as www.csg.com/bills/bill3433434.pdf, and you will end up with bill.pdf attached in your email, we automatically pull it from the URL.
+    </xsd:documentation></xsd:annotation><xsd:sequence><xsd:element name="FileName" type="xsd:string"/><xsd:element name="URL" type="xsd:string"/></xsd:sequence></xsd:complexType><xsd:complexType name="FileListType"><xsd:sequence><xsd:element maxOccurs="unbounded" minOccurs="0" name="File" type="tns:FileListEntry"/></xsd:sequence></xsd:complexType><xsd:complexType name="FileListEntry"><xsd:annotation><xsd:documentation>
+      The FileName is a string of your desired filename, such as PayYourBill.PDF, and the PhysicalFile is a MTOM Attachment (MTOM sent in chunks is MANDATORY) to transfer as binary data.
+      For example, send bill.pdf as the FileName, and then stream the file binary.  You then will get bill.pdf in the email.
+    </xsd:documentation></xsd:annotation><xsd:sequence><xsd:element name="FileName" type="xsd:string"/><xsd:element name="PhysicalFile" type="xsd:base64Binary" xmime:expectedContentTypes="application/octet-stream"/></xsd:sequence></xsd:complexType><xsd:complexType name="FTPServerFileListType"><xsd:sequence><xsd:element maxOccurs="unbounded" minOccurs="0" name="FTPServerFile" type="tns:FTPServerFileListEntry"/></xsd:sequence></xsd:complexType><xsd:complexType name="FTPServerFileListEntry"><xsd:annotation><xsd:documentation>
+      The FileName is a string of your desired filename, such as PayYourBill.PDF, and the FTPServerFileName is the name of the file on the ftp server.
+      For example, send bill.pdf as the FileName, and bill.pdf_2008_01_01_01_01_01_222_353344433 as the FTPServerFileName.  You then will get bill.pdf in the email.
+    </xsd:documentation></xsd:annotation><xsd:sequence><xsd:element name="FileName" type="xsd:string"/><xsd:element name="FTPServerFileName" type="xsd:string"/></xsd:sequence></xsd:complexType><xsd:complexType name="SendTriggerPrecisionEmailResponseType"><xsd:sequence><xsd:element name="ReturnCode" type="xsd:string"/><xsd:element name="TaskIdentifier" type="xsd:string"/></xsd:sequence></xsd:complexType><xsd:complexType name="SendBatchPrecisionEmailResponseType"><xsd:annotation><xsd:documentation>
+		BatchName will correspond to the batch that is setup and ready to process.  Task Identifier identifies the task to check status on.
+    </xsd:documentation></xsd:annotation><xsd:sequence><xsd:element name="ReturnCode" type="xsd:string"/><xsd:element name="BatchName" type="xsd:string"/><xsd:element name="TaskIdentifier" type="xsd:string"/></xsd:sequence></xsd:complexType><xsd:complexType name="RetrieveBatchStatusPrecisionEmailResponseType"><xsd:annotation><xsd:documentation>
+		Returns status of batch name.  Return code of 0 means done processing.
+    </xsd:documentation></xsd:annotation><xsd:sequence><xsd:element name="ReturnCode" type="xsd:string"/><xsd:element name="BatchName" type="xsd:string"/><xsd:element name="TaskIdentifier" type="xsd:string"/><xsd:element minOccurs="0" name="BatchDetails" type="tns:BatchDetailsListType"/></xsd:sequence></xsd:complexType><xsd:complexType name="BatchDetailsListType"><xsd:sequence><xsd:element maxOccurs="unbounded" minOccurs="0" name="BatchDetail" type="tns:BatchDetailListEntry"/></xsd:sequence></xsd:complexType><xsd:complexType name="BatchDetailListEntry"><xsd:annotation><xsd:documentation>
+      These are name value pairs of batch meta data.
+    </xsd:documentation></xsd:annotation><xsd:sequence><xsd:element name="BatchDetailName" type="xsd:string"/><xsd:element name="BatchDetailValue" type="xsd:string"/></xsd:sequence></xsd:complexType></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SendTriggerPrecisionEmailRequest">
+    <wsdl:part element="tns:SendTriggerPrecisionEmailRequest" name="SendTriggerPrecisionEmailRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SendTriggerBundlePrecisionEmailRequest">
+    <wsdl:part element="tns:SendTriggerBundlePrecisionEmailRequest" name="SendTriggerBundlePrecisionEmailRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SendBatchPrecisionEmailResponse">
+    <wsdl:part element="tns:SendBatchPrecisionEmailResponse" name="SendBatchPrecisionEmailResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SendTriggerBundlePrecisionEmailResponse">
+    <wsdl:part element="tns:SendTriggerBundlePrecisionEmailResponse" name="SendTriggerBundlePrecisionEmailResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SendTriggerPrecisionEmailResponse">
+    <wsdl:part element="tns:SendTriggerPrecisionEmailResponse" name="SendTriggerPrecisionEmailResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RetrieveBatchStatusPrecisionEmailRequest">
+    <wsdl:part element="tns:RetrieveBatchStatusPrecisionEmailRequest" name="RetrieveBatchStatusPrecisionEmailRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SendBatchPrecisionEmailRequest">
+    <wsdl:part element="tns:SendBatchPrecisionEmailRequest" name="SendBatchPrecisionEmailRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RetrieveBatchStatusPrecisionEmailResponse">
+    <wsdl:part element="tns:RetrieveBatchStatusPrecisionEmailResponse" name="RetrieveBatchStatusPrecisionEmailResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RetrieveEventsPrecisionEmailRequest">
+    <wsdl:part element="tns:RetrieveEventsPrecisionEmailRequest" name="RetrieveEventsPrecisionEmailRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RetrieveEventsPrecisionEmailResponse">
+    <wsdl:part element="tns:RetrieveEventsPrecisionEmailResponse" name="RetrieveEventsPrecisionEmailResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="PrecisionEmail">
+    <wsdl:operation name="SendBatchPrecisionEmail">
+      <wsdl:input message="tns:SendBatchPrecisionEmailRequest" name="SendBatchPrecisionEmailRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:SendBatchPrecisionEmailResponse" name="SendBatchPrecisionEmailResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTriggerBundlePrecisionEmail">
+      <wsdl:input message="tns:SendTriggerBundlePrecisionEmailRequest" name="SendTriggerBundlePrecisionEmailRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:SendTriggerBundlePrecisionEmailResponse" name="SendTriggerBundlePrecisionEmailResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveEventsPrecisionEmail">
+      <wsdl:input message="tns:RetrieveEventsPrecisionEmailRequest" name="RetrieveEventsPrecisionEmailRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:RetrieveEventsPrecisionEmailResponse" name="RetrieveEventsPrecisionEmailResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTriggerPrecisionEmail">
+      <wsdl:input message="tns:SendTriggerPrecisionEmailRequest" name="SendTriggerPrecisionEmailRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:SendTriggerPrecisionEmailResponse" name="SendTriggerPrecisionEmailResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveBatchStatusPrecisionEmail">
+      <wsdl:input message="tns:RetrieveBatchStatusPrecisionEmailRequest" name="RetrieveBatchStatusPrecisionEmailRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:RetrieveBatchStatusPrecisionEmailResponse" name="RetrieveBatchStatusPrecisionEmailResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PrecisionEmailSoap11" type="tns:PrecisionEmail">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="SendBatchPrecisionEmail">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="SendBatchPrecisionEmailRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="SendBatchPrecisionEmailResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTriggerBundlePrecisionEmail">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="SendTriggerBundlePrecisionEmailRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="SendTriggerBundlePrecisionEmailResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveEventsPrecisionEmail">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="RetrieveEventsPrecisionEmailRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="RetrieveEventsPrecisionEmailResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTriggerPrecisionEmail">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="SendTriggerPrecisionEmailRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="SendTriggerPrecisionEmailResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveBatchStatusPrecisionEmail">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="RetrieveBatchStatusPrecisionEmailRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="RetrieveBatchStatusPrecisionEmailResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PrecisionEmailService">
+    <wsdl:port binding="tns:PrecisionEmailSoap11" name="PrecisionEmailSoap11">
+      <soap:address location="https://pegw.csgweb.com/pmail/services/precisionemail"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

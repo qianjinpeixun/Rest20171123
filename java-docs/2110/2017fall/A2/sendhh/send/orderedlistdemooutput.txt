@@ -1,0 +1,6 @@
+Frist list:
+[Amar, Boris, Charlie, Dan, Fujian, Inder, Travis]
+Second list:
+[Alex, Ben, Betty, Charlie, Dan, Pei, Travis, Zola, Zulu]
+Merged list:
+[Alex, Amar, Ben, Betty, Boris, Charlie, Dan, Fujian, Inder, Pei, Travis, Zola, Zulu]

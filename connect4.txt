@@ -1,0 +1,15 @@
+       1  2  3  4  5  6  7
+    1        Y              
+
+    2        R  Y           
+
+    3  Y     Y  Y  R  R     
+
+    4  Y  R  Y  R  R  Y     
+
+    5  R  Y  R  Y  R  R     
+
+    6  R  R  Y  R  Y  Y  R  
+
+
+RED �C Connect 4! Congratulations Bob! You Win in 27 turns.

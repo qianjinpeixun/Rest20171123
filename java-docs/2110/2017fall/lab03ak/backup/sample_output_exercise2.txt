@@ -1,0 +1,2 @@
+GenericStack [stack=[London, Paris, Halifax]]
+GenericStack [stack=[1, 2, 3]]

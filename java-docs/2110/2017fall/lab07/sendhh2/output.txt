@@ -1,0 +1,41 @@
+Firstly, We will create a binary search tree with 6 nodes:
+What's the value of node 1? 1
+What's the value of node 2? 2
+What's the value of node 3? 3
+What's the value of node 4? 4
+What's the value of node 5? 5
+What's the value of node 6? 6
+
+Start to create the first tree for testsing.
+Step 1, FindMax=6
+Step 2, FindMin=1
+Please enter the value for searching: 1
+Step 3, Found it, value is:1
+Firstly, We will create a tree with 6 nodes.
+What's the value of node 1? 1
+What's the value of node 2? 2
+What's the value of node 3? 3
+What's the value of node 4? 4
+What's the value of node 5? 5
+What's the value of node 6? 6
+
+Start to create the tree for testsing.
+
+Inorder:
+6	4	2	5	1	3	
+No, it is not a binary search tree!
+
+Firstly, We will create a binary search tree with 7 nodes.
+What's the value of node 1? 1
+What's the value of node 2? 2
+What's the value of node 3? 3
+What's the value of node 4? 4
+What's the value of node 5? 5
+What's the value of node 6? 6
+What's the value of node 7? 7
+
+Start to create the tree for testsing.
+
+Inorder:
+1	2	3	4	5	6	7	
+Yes, it's a binary search tree!

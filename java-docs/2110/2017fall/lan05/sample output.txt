@@ -1,0 +1,82 @@
+Sample output for exercise 1:
+
+The first 20 numbers in the Fibonacci series is:
+0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181
+
+The factorials of 1 to 10 are as below:
+1!=1
+2!=2
+3!=6
+4!=24
+5!=120
+6!=720
+7!=5040
+8!=40320
+9!=362880
+10!=3628800
+
+Please enter value of x amd n:3 2
+The power(3,2)=9
+
+
+Sample output for exercise 2:
+
+Please enter a positive integer n:10
+10 9 8 7 6 5 4 3 2 1 BlastOff!
+
+Sample output for exercise 3:
+Please enter a positive integer n:10
+10 8 6 4 2 BlastOff!
+
+Please enter a positive integer n:9
+9 7 5 3 1 BlastOff!
+
+
+Sample output for exercise 4:
+
+Please enter value of n and m:2 5
+Please enter value of n and m:2 5
+The first 5 multiples of 2 is as below:
+2,4,6,8,10
+
+Please enter value of n and m:3 6
+The first 6 multiples of 3 is as below:
+3,6,9,12,15,18
+
+Sample output for exercise 5:
+Please enter value of n:1234
+1
+2
+3
+4
+
+Sample output for exercise 6:
+Please enter value of n:4
+1*1+2*2+3*3+4*4=30
+
+Sample output for exercise 7:
+
+Please enter the number of discs:8
+the number of moves for a 8 discs is:256 with 1 millisecondes.
+
+Please enter the number of discs:12
+the number of moves for a 12 discs is:4095 with 0 millisecondes.
+
+Please enter the number of discs:16
+the number of moves for a 16 discs is:65535 with 1 millisecondes.
+
+Please enter the number of discs:20
+the number of moves for a 20 discs is:1048575 with 6 millisecondes.
+
+Please enter the number of discs:24
+the number of moves for a 24 discs is:16777215 with 85 millisecondes.
+
+Please enter the number of discs:28
+the number of moves for a 28 discs is:268435455 with 1127 millisecondes.
+
+
+
+
+
+
+

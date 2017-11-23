@@ -1,0 +1,21 @@
+NHL Results Summary
+
+Players with highest points and their teams:
+player name is:St.Louis and team is:TB
+
+Most aggressive players, their teams and their positions:
+player name is:Clowe , team is:NYR and position is:RW
+player name is:Ott , team is:BUF and position is:C
+
+Most valuable players and their teams:
+player name is:Carter and team is:LA
+
+Most promising players and their teams:
+player name is:Ovechkin and team is:WSH
+
+Teams that had the most number of penalty minutes:
+team name is:BOS
+
+Teams that had the most number of game winning goals:
+team name is:PIT
+

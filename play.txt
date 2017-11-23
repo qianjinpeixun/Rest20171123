@@ -1,0 +1,9 @@
+ 	1 	2 	3 	4 	5 	6 	7
+1	[ ]	[ ]	[ ]	[ ]	[ ]	[ ]	[ ]	
+2	[ ]	[ ]	[ ]	[ ]	[ ]	[ ]	[ ]	
+3	[ ]	[ ]	[Y]	[R]	[ ]	[ ]	[ ]	
+4	[R]	[ ]	[R]	[Y]	[Y]	[ ]	[ ]	
+5	[Y]	[R]	[Y]	[R]	[R]	[Y]	[ ]	
+6	[R]	[R]	[R]	[Y]	[Y]	[R]	[Y]	
+
+Red �C Connect 4! Congratulation Bob! You win in 19 turns

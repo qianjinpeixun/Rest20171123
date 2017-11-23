@@ -1,0 +1,40 @@
+Output for exercise 2:
+
+NHL Results Summary
+
+Players with highest points and their teams:
+St.Louis,TB
+
+
+Most aggressive players, their teams and their positions:
+Clowe,NYR,RW
+Ott,BUF,C
+
+
+Most valuable players and their teams:
+Carter,LA
+
+
+Most promising players and their teams:
+Ovechkin,WSH
+
+
+Teams that had the most number of penalty minutes:
+BOS
+
+
+Teams that had the most number of game winning goals:
+PIT
+
+
+
+Output for exercise 2:
+
+The first list reading from file1 is:
+[Amar, Boris, Charlie, Dan, Fujian, Inder, Travis]
+
+The second list reading from filew is:
+[Alex, Ben, Betty, Charlie, Dan, Pei, Travis, Zola, Zulu]
+
+The merged third list is:
+[Alex, Amar, Ben, Betty, Boris, Charlie, Dan, Fujian, Inder, Pei, Travis, Zola, Zulu]

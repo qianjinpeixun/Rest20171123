@@ -1,0 +1,22 @@
+CSCI 2132 Software Development Assignment 6 Solutions for Question 2a:
+Input:
+	The input of function f1 has two parameters: 
+	The first is (int n), it means the index of the second parameter as an int array. 
+	The second is (int a[]), it is an integer array.
+Output:
+	The output of this function is an integer, it will return 0 for each call.
+How to work:
+	The feature of this function is to put the index’s value into the first position in the array, and then shift the others to next position one by one till the position of index.
+
+Ilustrate its input and output on a small example with n = 5:
+	For example, n =5 , a = {1,2,3,4,5}
+	1. Initially, the array a is {1,2,3,4,5},int *p=a, means that pointer p equals a, tmp=a[n-1]=a[4]=5
+	2. in the for loop, n - - means position moves from the last to forward, p ++ means the position moves from the front to rear.
+	
+	First loop, *p is 1, tmp is 5, the end of this loop, array is: 5 2 3 4 5, tmp becomes 1, n becomes 5
+	Second loop, *p is 2, tmp is 1, the end of this loop, array is: 5 1 3 4 5, tmp becomes 2, n becomes 4
+	Third loop, *p is 3, tmp is 2, the end of this loop, array is: 5 1 2 4 5, tmp becomes 3, n becomes 3
+	Fourth loop, *p is 4, tmp is 3, the end of this loop, array is: 5 1 2 3 5, tmp becomes 4, n becomes 2
+	Fifth loop, *p is 5, tmp is 4, the end of this loop, array is: 5 1 2 3 4, tmp becomes 5,  n becomes 1
+	After fifth loop, n becomes 0, jump out the loop, return is 0
+

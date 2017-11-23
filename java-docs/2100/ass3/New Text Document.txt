@@ -1,0 +1,13 @@
+[See the attached PDF for a more eye-pleasing version of these instructions.]
+Introduction
+Read "How to Change the LEDs on a Roccat Ryos" at WikiHow (http://www.wikihow.com/Change-LEDs-on-Roccat-Ryos). This article talks about how to remove old, burnt-out LEDs from a particular keyboard. Although these instructions can be followed, there is room for improvement.
+Instructions
+For this assignment, you will write a set of technical instructions about how to replace the LEDs in the keyboard; base your instructions on the instructions from WikiHow, but improve them wherever you can. Before proceeding, review the "Technical Instructions" section in the PDF in the Content section on Brightspace; this will be posted as soon as we have covered the material in class.
+Write your instructions for an audience that is familiar with the tools that will be used, but has never replaced LEDs. Keep your audience in mind at all times as you write the technical instructions.
+Create the first three sections of the document yourself ("Summary", "Purpose", and "Tools and Materials"). You may combine Summary and Purpose in one section since they are both short. 
+Copy whatever information and images you need for the "Steps" section from the article.
+Give proper credit by citing the original article at the beginning of the "Steps" section, using the APA style. For instance, somewhere near the beginning of the Steps section, insert something like the following: "These instructions are based on information and images from WikiHow...".
+Add an APA references page to the end of the document.
+Base your instructions on the original article, but do not just copy from it verbatim. The instructions are sometimes all right, but sometimes badly done. Fix the badly-done areas.
+Fix all problems with instructions, information, precautions, figures, etc. that are incorrectly written, badly positioned, improperly named, or otherwise substandard.
+Make sure that all illustrations are properly formatted and referenced in the text, as should always be the case

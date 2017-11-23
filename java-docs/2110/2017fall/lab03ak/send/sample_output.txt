@@ -1,0 +1,82 @@
+Sample output of exercise0：
+ABC
+100
+A-
+-75
+
+
+Sample output of exercise1：
+Please enter two Integer for xpos and ypos:1 2
+Please enter two Double for xpos and ypos:1.1 2.2
+Please enter two String for xpos and ypos:abc def
+XPOS:1    YPOS:2
+XPOS:1.1    YPOS:2.2
+XPOS:abc    YPOS:def
+
+Sample output of exercise2：
+GenericStack [stack=[London, Paris, Halifax]]
+GenericStack [stack=[1, 2, 3]]
+
+Sample output of exercise3：
+Enter the filename to read from: StudentRecord.txt
+
+The content of the file is:
+Ichabod Crane 123456
+Brom Bones 456321
+Emboar Pokemon 111222
+Rayquazza Pokemon 333111
+Cool Dude 101010
+Trend Chaser 654321
+Chuck Norris 112233
+Drum Dude 11122
+
+The stack1 is:GenericStack [stack=[StudentRecord [firstName=Ichabod, lastName=Crane, bannerID=123456], StudentRecord [firstName=Brom, lastName=Bones, bannerID=456321], StudentRecord [firstName=Emboar, lastName=Pokemon, bannerID=111222], StudentRecord [firstName=Rayquazza, lastName=Pokemon, bannerID=333111], StudentRecord [firstName=Cool, lastName=Dude, bannerID=101010], StudentRecord [firstName=Trend, lastName=Chaser, bannerID=654321], StudentRecord [firstName=Chuck, lastName=Norris, bannerID=112233], StudentRecord [firstName=Drum, lastName=Dude, bannerID=11122]]]
+
+The stack2 is:
+Crane
+Bones
+Pokemon
+Pokemon
+Dude
+Chaser
+Norris
+Dude
+
+
+Sample output of exercise4：
+The current quque length is:4
+If this queue is empty now? false
+This element has been removed from this queue:1
+Now, the queue is:GenericQueue [queue=[2, 3, 4], cursor=-1]
+This first element is:2
+Number 3 element is:0
+Now, the queue is:GenericQueue [queue=[3, 5, 6, 7, 8], cursor=-1]
+The Frist element is:3
+Try to get the next element:5
+Try to get the next element:6
+Try to get the next element:7
+Try to get the next element:8
+Try to get the next element:null
+Try to get the next element:null
+Try to get the next element:null
+
+Sample output of exercise5：
+After add some elements, the current printerQueue is:
+Job [owner=swilliams, jobId=309]
+Job [owner=ronaldinho, jobId=300]
+Job [owner=marionjones, jobId=312]
+Job [owner=swilliams, jobId=267]
+Job [owner=davidh, jobId=135]
+Job [owner=ronaldinho, jobId=301]
+
+After removes the first entry from the queue, the current printerQueue is:
+Job [owner=ronaldinho, jobId=300]
+Job [owner=marionjones, jobId=312]
+Job [owner=swilliams, jobId=267]
+Job [owner=davidh, jobId=135]
+Job [owner=ronaldinho, jobId=301]
+
+After removes all entries of ronaldinho from the queue, the current printerQueue is:
+Job [owner=marionjones, jobId=312]
+Job [owner=swilliams, jobId=267]
+Job [owner=davidh, jobId=135]

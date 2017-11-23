@@ -1,0 +1,17 @@
+question 1
+a. grep '^...$' test.txt
+b. grep '^c...s$' test.txt
+c. grep -i -v 'THAT' test.txt
+d. grep -v 'THERE' test.txt | grep  'HERE' test.txt
+e. grep 'THIS' test.txt  | grep 'THAT' |grep -v 'THE OTHER THING'
+f. grep '^[A-Z]\w\{0,7\},[A-Z]\w\{0,7\}' test.txt
+
+question 2
+<expr>  ::= <expr> + <exprD> | <exprD> + <expr> | <expr> - <exprD> | <exprD> - <expr> | <exprD>
+<exprD> ::= <exprD> / <exprM> | <exprM> / <exprD> | <exprM>
+<exprM> ::= <exprM> * <term> | <term>
+<term> ::= <var> | const
+<var> ::= a | b | c | d | e
+
+question 3
+Draw a parse tree using the rules you created in question 2 for the expression a/b/c+d*e using ASCII Art or some drawing package like Visio, MS PowerPoint, MS Word or even good old MS paint.

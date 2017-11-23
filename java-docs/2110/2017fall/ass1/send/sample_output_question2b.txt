@@ -1,0 +1,19 @@
+Enter the filename to read from: Genome.txt
+Enter the test string: CC
+Substring CC was found 1115 times
+Execution time for string matching: 6 ms
+
+Enter the filename to read from: Genome.txt
+Enter the test string: GGGCT
+Substring GGGCT was found 34 times
+Execution time for string matching: 3 ms
+
+Enter the filename to read from: Genome.txt
+Enter the test string: G
+Substring G was found 4782 times
+Execution time for string matching: 10 ms
+
+Enter the filename to read from: Genome.txt
+Enter the test string: &^$%#()Q
+Substring &^$%#()Q was found 0 times
+Execution time for string matching: 4 ms

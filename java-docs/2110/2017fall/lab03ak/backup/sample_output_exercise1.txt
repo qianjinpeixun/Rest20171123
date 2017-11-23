@@ -1,0 +1,6 @@
+Please enter two Integer for xpos and ypos:1 2
+Please enter two Double for xpos and ypos:1.1 2.2
+Please enter two String for xpos and ypos:abc def
+XPOS:1    YPOS:2
+XPOS:1.1    YPOS:2.2
+XPOS:abc    YPOS:def

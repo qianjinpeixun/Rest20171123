@@ -1,0 +1,51 @@
+Enter name or done:1
+Enter name or done:2
+Enter name or done:3
+Enter name or done:4
+Enter name or done:5
+Enter name or done:6
+Enter name or done:done
+Height of the tree is: 3
+Number of nodes in the tree is: 6
+Inorder:	4	2	5	1	6	3	
+Preorder:	1	2	4	5	3	6	
+Postorder:	4	5	2	6	3	1	
+Levelorder:	1	2	3	4	5	6	
+
+
+
+
+Enter name or done:emboar
+Enter name or done:unfezant
+Enter name or done:palkia
+Enter name or done:serperior
+Enter name or done:samurott
+Enter name or done:done
+Height of the tree is: 3
+Number of nodes in the tree is: 5
+Inorder:	serperior	unfezant	samurott	emboar	palkia	
+Preorder:	emboar	unfezant	serperior	samurott	palkia	
+Postorder:	serperior	samurott	unfezant	palkia	emboar	
+Levelorder:	emboar	unfezant	palkia	serperior	samurott	
+
+
+
+Enter name or done:1
+Enter name or done:2
+Enter name or done:3
+Enter name or done:4
+Enter name or done:5
+Enter name or done:6
+Enter name or done:7
+Enter name or done:8
+Enter name or done:9
+Enter name or done:10
+Enter name or done:done
+Height of the tree is: 4
+Number of nodes in the tree is: 10
+Inorder:	8	4	9	2	10	5	1	6	3	7	
+Preorder:	1	2	4	8	9	5	10	3	6	7	
+Postorder:	8	9	4	10	5	2	6	7	3	1	
+Levelorder:	1	2	3	4	5	6	7	8	9	10	
+
+

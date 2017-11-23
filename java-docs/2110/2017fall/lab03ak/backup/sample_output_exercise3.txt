@@ -1,0 +1,23 @@
+Enter the filename to read from: StudentRecord.txt
+
+The content of the file is:
+Ichabod Crane 123456
+Brom Bones 456321
+Emboar Pokemon 111222
+Rayquazza Pokemon 333111
+Cool Dude 101010
+Trend Chaser 654321
+Chuck Norris 112233
+Drum Dude 11122
+
+The stack1 is:GenericStack [stack=[StudentRecord [firstName=Ichabod, lastName=Crane, bannerID=123456], StudentRecord [firstName=Brom, lastName=Bones, bannerID=456321], StudentRecord [firstName=Emboar, lastName=Pokemon, bannerID=111222], StudentRecord [firstName=Rayquazza, lastName=Pokemon, bannerID=333111], StudentRecord [firstName=Cool, lastName=Dude, bannerID=101010], StudentRecord [firstName=Trend, lastName=Chaser, bannerID=654321], StudentRecord [firstName=Chuck, lastName=Norris, bannerID=112233], StudentRecord [firstName=Drum, lastName=Dude, bannerID=11122]]]
+
+The stack2 is:
+Crane
+Bones
+Pokemon
+Pokemon
+Dude
+Chaser
+Norris
+Dude

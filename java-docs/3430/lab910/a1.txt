@@ -1,0 +1,20 @@
+def fOnly(a):print(a = [b for b in a if isinstance(b, float)])
+	for item in list: print item 
+	
+		if isinstance (item,float):
+			print item 
+			
+			
+			fOnly([1.0, 2, 3.0, ’cat’, ’a’, 4, 5])
+			
+			
+			list = [1.0, 2, 3.0, ’cat’, ’a’, 4, 5]; for item in list: print item
+			
+			
+			print(a = [b for b in a if isinstance(b, float)])
+			
+			
+def fOnly(a):
+	print(a = [b for b in a if isinstance(b, float)])
+	return
+fOnly([1.0, 2, 3.0, "cat", "a", 4, 5]);

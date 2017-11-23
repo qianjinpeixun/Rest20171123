@@ -1,0 +1,50 @@
+First sample output:
+
+How many nodes do you want to build a binary search tree? 7
+Please Enter the value of the number 1 node: 1
+Please Enter the value of the number 2 node: 2
+Please Enter the value of the number 3 node: 3
+Please Enter the value of the number 4 node: 4
+Please Enter the value of the number 5 node: 5
+Please Enter the value of the number 6 node: 6
+Please Enter the value of the number 7 node: 7
+The inorder of the tree is as follows:
+1	2	3	4	5	6	7	
+Exercise 1, the largest key in the binary search tree is: 7
+Exercise 2, the smallest key in the binary search tree is: 1
+Exercise 3, please enter the numbers which you want to search in the tree: 4
+The search result is: 4
+Exercise 4, how many nodes do you want to have for a tree?3
+Please enter the value of the number 1 node: 2
+Please enter the value of the number 2 node: 1
+Please enter the value of the number 3 node: 3
+The inorder of the new tree is:
+1	2	3	
+This tree is a binary search tree!
+
+
+Second sample output:
+
+How many nodes do you want to build a binary search tree? 5
+Please Enter the value of the number 1 node: 1
+Please Enter the value of the number 2 node: 2
+Please Enter the value of the number 3 node: 3
+Please Enter the value of the number 4 node: 4
+Please Enter the value of the number 5 node: 5
+The inorder of the tree is as follows:
+1	2	3	4	5	
+Exercise 1, the largest key in the binary search tree is: 5
+Exercise 2, the smallest key in the binary search tree is: 1
+Exercise 3, please enter the numbers which you want to search in the tree: 1
+The search result is: 1
+Exercise 4, how many nodes do you want to have for a tree?7
+Please enter the value of the number 1 node: 1
+Please enter the value of the number 2 node: 2
+Please enter the value of the number 3 node: 3
+Please enter the value of the number 4 node: 4
+Please enter the value of the number 5 node: 5
+Please enter the value of the number 6 node: 6
+Please enter the value of the number 7 node: 7
+The inorder of the new tree is:
+4	2	5	1	6	3	7	
+This tree is not a binary search tree!

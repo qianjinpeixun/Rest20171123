@@ -1,0 +1,8 @@
+i.e., must count as the same uppercase and lowercase letters.
+The count is the number of times a letter occured in text, while
+frequency is a fraction of time the letter occured divided by the
+total number of letters.  (Be careful to avoid dividing by zero!)
+
+Any characters between letters, i.e, between words, are counted as a
+simple space character, which is printed as an underscore (`\verb,_,')
+character.

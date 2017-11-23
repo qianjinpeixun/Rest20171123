@@ -1,0 +1,60 @@
+Firstly, We will create a tree with 6 nodes:
+What's the value of node 1? 1
+What's the value of node 2? 2
+What's the value of node 3? 3
+What's the value of node 4? 4
+What's the value of node 5? 5
+What's the value of node 6? 6
+
+Start to create the first tree for testsing.
+Start to print the tree:
+Preorder:	1	2	4	6	5	3	
+Inorder:	6	4	2	5	1	3	
+Postorder:	6	4	5	2	3	1	
+Number of Nodes:	6
+Height:	4
+This tree is not balanced	
+Levelorder:	1	2	3	4	5	6	
+
+
+
+Secondly, We will create another tree with 6 nodes:
+What's the value of node 1? a
+What's the value of node 2? b
+What's the value of node 3? c
+What's the value of node 4? d
+What's the value of node 5? e
+What's the value of node 6? f
+
+Start to create the first tree for testsing.
+Start to print the tree:
+Preorder:	a	b	c	d	e	f	
+Inorder:	b	d	f	e	c	a	
+Postorder:	f	e	d	c	b	a	
+Number of Nodes:	6
+Height:	6
+This tree is not balanced	
+Levelorder:	a	b	c	d	e	f	
+
+
+
+Finally, We will create the third tree with 7 nodes:
+What's the value of node 1? 1
+What's the value of node 2? 2
+What's the value of node 3? 3
+What's the value of node 4? 4
+What's the value of node 5? 5
+What's the value of node 6? 6
+What's the value of node 7? 7
+
+Start to create the third tree for testsing.
+Start to print the tree:
+Preorder:	1	2	4	6	5	3	7	
+Inorder:	6	4	2	5	1	7	3	
+Postorder:	6	4	5	2	7	3	1	
+Number of Nodes:	7
+Height:	4
+This tree is balanced	
+Levelorder:	1	2	3	4	5	7	6	
+
+
