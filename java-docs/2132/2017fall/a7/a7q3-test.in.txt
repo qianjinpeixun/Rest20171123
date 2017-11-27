@@ -1,0 +1,7 @@
+This is a sample input.
+The program should first read all the input.  If it found any words
+longer than 25 letters, such words should be ignored; and if it found
+more than 10,000 distinct words after making the words lowercase, all
+additional words should be ignored.
+
+A very long word: PNEUMONOULTRAMICROSCOPICSILICOVOLCANOCONIOSI

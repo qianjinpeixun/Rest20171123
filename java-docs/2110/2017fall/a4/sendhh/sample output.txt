@@ -1,0 +1,72 @@
+Enter positive integers into the heap (-1 when done): 90 80 60 20 70 10 15 5 9 50 -1
+The heap: 
+[90, 80, 60, 20, 70, 10, 15, 5, 9, 50]
+How many nodes to delete (0 to 10)? 1
+Deleting 90
+[80, 70, 60, 20, 50, 10, 15, 5, 9]
+The key with the smallest priority: 5
+Start to delete the smallest key.
+The heap: 
+[80, 70, 60, 20, 50, 10, 15, 9]
+
+
+
+Enter positive integers into the heap (-1 when done): 90 80 60 20 70 10 15 5 9 50 100 -1
+The heap: 
+[100, 90, 60, 20, 80, 10, 15, 5, 9, 50, 70]
+How many nodes to delete (0 to 11)? 1
+Deleting 100
+[90, 80, 60, 20, 70, 10, 15, 5, 9, 50]
+The key with the smallest priority: 5
+Start to delete the smallest key.
+The heap: 
+[90, 80, 60, 50, 70, 10, 15, 20, 9]
+
+
+Enter positive integers into the heap (-1 when done): 90 80 60 20 70 10 15 5 9 50 1 -1
+The heap: 
+[90, 80, 60, 20, 70, 10, 15, 5, 9, 50, 1]
+How many nodes to delete (0 to 11)? 2
+Deleting 90
+[80, 70, 60, 20, 50, 10, 15, 5, 9, 1]
+Deleting 80
+[70, 50, 60, 20, 1, 10, 15, 5, 9]
+The key with the smallest priority: 1
+Start to delete the smallest key.
+The heap: 
+[70, 50, 60, 20, 9, 10, 15, 5]
+
+
+
+
+Please create two heaps for testing
+Enter positive integers into the heap (-1 when done): 90 80 60 20 70 10 15 -1
+Enter positive integers into the heap (-1 when done): 85 20 70 10 5 -1
+The first heap: 
+[90, 80, 60, 20, 70, 10, 15]
+The second heap: 
+[85, 20, 70, 10, 5]
+The merged heap: 
+[90, 85, 60, 80, 70, 10, 15, 20, 20, 70, 10, 5]
+
+
+Please create two heaps for testing
+Enter positive integers into the heap (-1 when done): 1 -1
+Enter positive integers into the heap (-1 when done): 2 3 4 -1
+The first heap: 
+[1]
+The second heap: 
+[4, 2, 3]
+The merged heap: 
+[4, 3, 2, 1]
+
+
+Please create two heaps for testing
+Enter positive integers into the heap (-1 when done): 1 2 3 4 5 -1
+Enter positive integers into the heap (-1 when done): 6 -1
+The first heap: 
+[5, 4, 2, 1, 3]
+The second heap: 
+[6]
+The merged heap: 
+[6, 4, 5, 1, 3, 2]

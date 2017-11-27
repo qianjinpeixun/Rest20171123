@@ -1,0 +1,30 @@
+test case 1:
+Enter positive integers into the first heap (-1 when done): 90 80 60 20 70 10 15 -1
+The first heap: 
+[90, 80, 60, 20, 70, 10, 15]
+Enter positive integers into the second heap (-1 when done): 85 20 70 10 5 -1
+The second heap: 
+[85, 20, 70, 10, 5]
+The merged heap: 
+[90, 85, 60, 80, 70, 10, 15, 20, 20, 70, 10, 5]
+
+
+test case 2:
+Enter positive integers into the first heap (-1 when done): 1 2 3 4 5 6 7 8 -1
+The first heap: 
+[8, 7, 6, 4, 3, 2, 5, 1]
+Enter positive integers into the second heap (-1 when done): 9 -1
+The second heap: 
+[9]
+The merged heap: 
+[9, 8, 6, 7, 3, 2, 5, 1, 4]
+
+test case 3:
+Enter positive integers into the first heap (-1 when done): 1 -1
+The first heap: 
+[1]
+Enter positive integers into the second heap (-1 when done): 2 3 4 -1
+The second heap: 
+[4, 2, 3]
+The merged heap: 
+[4, 3, 2, 1]

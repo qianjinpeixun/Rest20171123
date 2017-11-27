@@ -1,0 +1,15 @@
+After line1
+a: T h i s \x20 A B C D \x00
+a as string: "This ABCD"
+length of a: 9
+
+After line2
+a: T h i s \x20 A B C D 0 1 2 3 \x00
+a as string: "This ABCD0123"
+length of a: 13
+
+After line3
+a: T h i s \x20 A B C D 0 1 2 3 - e n c e . \x0A \x00
+a as string: "This ABCD0123-ence.
+"
+length of a: 20

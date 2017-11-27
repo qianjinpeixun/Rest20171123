@@ -1,0 +1,43 @@
+test case 1:
+Enter positive integers into the heap (-1 when done): 1 2 3 4 5 6 7 8 9 -1
+The heap: 
+[9, 8, 6, 7, 3, 2, 5, 1, 4]
+The smallest is: 1
+How many nodes to delete (0 to 9)? 1
+Deleting 9
+[8, 7, 6, 4, 3, 2, 5, 1]
+The smallest is: 1
+After dequeueMin,The heap: 
+[8, 7, 6, 4, 3, 2, 5]
+
+
+
+
+test case 2:
+Enter positive integers into the heap (-1 when done): 1 2 3 4 5 6 7 8 9 10 11 12 -1
+The heap: 
+[12, 10, 11, 7, 9, 6, 5, 1, 4, 3, 8, 2]
+The smallest is: 1
+How many nodes to delete (0 to 12)? 3
+Deleting 12
+[11, 10, 6, 7, 9, 2, 5, 1, 4, 3, 8]
+Deleting 11
+[10, 9, 6, 7, 8, 2, 5, 1, 4, 3]
+Deleting 10
+[9, 8, 6, 7, 3, 2, 5, 1, 4]
+The smallest is: 1
+After dequeueMin,The heap: 
+[9, 8, 6, 7, 3, 2, 5, 4]
+
+
+test case 3:
+Enter positive integers into the heap (-1 when done): 1 2 -1
+The heap: 
+[2, 1]
+The smallest is: 1
+How many nodes to delete (0 to 2)? 1
+Deleting 2
+[1]
+The smallest is: 1
+After dequeueMin,The heap: 
+[]

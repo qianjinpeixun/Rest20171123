@@ -1,0 +1,112 @@
+
+Experimenting with different number of keys (10, 20, 30, 40, 50)
+
+Enter the size of the hash table: 10
+Enter the number of keys to be hashed: 10
+
+Hash Table created:
+-->empty
+-->empty
+-->6582-->2362
+-->7193-->4003-->2063
+-->3614
+-->5445
+-->7276
+-->9157-->5457
+-->empty
+-->empty
+Table size: 10
+Number of keys: 10
+Load factor: 1.0
+Number of collisions: 4
+Longest list: 3
+
+
+
+Enter the size of the hash table: 10
+Enter the number of keys to be hashed: 20
+
+Hash Table created:
+-->6880
+-->empty
+-->7682
+-->1373-->443-->4343-->2533
+-->924
+-->8355
+-->2096-->8256-->7816-->2366-->8686
+-->917
+-->818-->8298-->4958-->9998
+-->9459-->2729
+Table size: 10
+Number of keys: 20
+Load factor: 2.0
+Number of collisions: 11
+Longest list: 5
+
+
+
+
+Enter the size of the hash table: 10
+Enter the number of keys to be hashed: 30
+
+Hash Table created:
+-->4250-->3720-->6020-->3880-->240
+-->6751-->741-->591-->9951-->3991
+-->8972-->5112-->7242-->6992
+-->6223-->9833
+-->2024-->8044
+-->empty
+-->2096-->5956-->2296-->1836
+-->8817-->8487-->8427-->5957-->6667
+-->9658-->3628
+-->7569
+Table size: 10
+Number of keys: 30
+Load factor: 3.0
+Number of collisions: 21
+Longest list: 5
+
+
+
+
+Enter the size of the hash table: 10
+Enter the number of keys to be hashed: 40
+
+Hash Table created:
+-->9500-->6440
+-->8441-->3801-->4001-->6331
+-->42-->332-->1702-->9872-->5402
+-->7413-->8753-->2773-->553
+-->5174-->4634-->1164-->1924-->444-->9484
+-->6105-->1905-->5035-->1655-->465
+-->6556-->2926-->7136-->8946
+-->6717-->9927
+-->18-->3438-->4288-->6118
+-->9469-->6309-->9639-->9869
+Table size: 10
+Number of keys: 40
+Load factor: 4.0
+Number of collisions: 30
+Longest list: 6
+
+
+
+Enter the size of the hash table: 10
+Enter the number of keys to be hashed: 50
+
+Hash Table created:
+-->3550-->720-->240
+-->471-->6291-->6601-->6451-->3981-->5551-->1381-->1161
+-->1882-->7602-->3092-->8112
+-->4343-->1363-->9423-->4563-->1263
+-->5844-->144-->424
+-->4045-->8625-->745
+-->5546-->9096-->8586-->3186
+-->607-->2537-->2157-->4807-->1967-->2417
+-->6978-->4698-->1298-->6128
+-->1119-->7319-->3049-->9989-->3889-->1719-->3839-->109-->3859-->2469
+Table size: 10
+Number of keys: 50
+Load factor: 5.0
+Number of collisions: 40
+Longest list: 10
