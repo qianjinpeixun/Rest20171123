@@ -1,6 +1,12 @@
 package com.qianjin.java.dal.cs3.lab8ak;
 
 
+/**
+ * In order to do the lab 8, copy this class file from lab 4
+ * 
+ * No modifications
+ *
+ */
 public class LinkedList<T>
 {
 	//attributes
@@ -49,10 +55,12 @@ public class LinkedList<T>
 	public void enumerate()
 	{
 		Node<T> curr = front;
-	
+		if(curr==null){
+		    System.out.print("-->empty");
+		}
 		while (curr!=null)
 		{
-			System.out.print(curr.getData() + "--> ");
+			System.out.print("-->"+curr.getData() );
 			curr = curr.getNext();
 		}
 		
