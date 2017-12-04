@@ -1,0 +1,37 @@
+Sample Run 1
+Login: rpokemon
+Password: drow456
+
+Login successful
+Welcome Rayquazza Pokemon
+
+
+
+Sample Run 2
+Login: cdude
+Password: trythis
+
+Either the username or password is incorrect. You have 2 more attempts.
+Login: cdude
+Password: trythat
+
+Either the username or password is incorrect. You have 1 more attempts.
+Login: cdude
+Password: 675rtht!
+Sorry. Incorrect login. Please contact the system administrator.
+
+
+
+
+Sample Run 3
+Login: tchaser
+Password: trythis
+
+Either the username or password is incorrect. You have 2 more attempts.
+Login: tchaser
+Password: xpxo567!
+
+Login successful
+Welcome Trend Chaser
+
+

@@ -68,7 +68,7 @@ public class BankImpl implements Bank {
      */
     public void getState() {
 
-        System.out.println("maximun:");
+        System.out.println("maximun matrix:");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 System.out.print(maximum[i][j] + "\t");
@@ -76,7 +76,7 @@ public class BankImpl implements Bank {
             System.out.println();
         }
 
-        System.out.println("need:");
+        System.out.println("\nneed matrix:");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 System.out.print(need[i][j] + "\t");
@@ -84,16 +84,16 @@ public class BankImpl implements Bank {
             System.out.println();
         }
 
-        System.out.println("available:");
+        System.out.println("\navailable matrix:");
         for (int j = 0; j < m; j++) {
             System.out.print(available[j] + "\t");
         }
         System.out.println();
 
-        System.out.println("maximum:");
+        System.out.println("\nallocation matrix:");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                System.out.print(maximum[i][j] + "\t");
+                System.out.print(allocation[i][j] + "\t");
             }
             System.out.println();
         }
@@ -134,7 +134,6 @@ public class BankImpl implements Bank {
         // second step, check available
         for (int i = 0; i < m; i++) {
             if (request[i] > available[i]) {
-
                 return false;
             }
         }
@@ -167,35 +166,44 @@ public class BankImpl implements Bank {
      * @return if in safe mode, return true, otherwise return false
      */
     private boolean isSafe(int s) {
-        int work;
+        int work[] = available;
         boolean finish[] = new boolean[n];
-        int temp[] = new int[n];
-        int i, j, k = 0;
+
         // by default, all process not finished
-        for (i = 0; i < n; i++)
+        for (int i = 0; i < n; i++)
             finish[i] = false;
-        // start to check available
-        for (j = 0; j < m; j++) {
-            work = available[j];
-            i = s;
-            // if the ith process can finish
-            while (i < n) {
-                if (finish[i] == false && need[i][j] <= work) {
-                    work = work + allocation[i][j];
-                    finish[i] = true;
-                    temp[k] = i;
-                    k++;
-                    i = 0;
-                } else {
-                    i++;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (finish[j] == false) {
+                    for (int k = 0; k < m; k++) {
+                        // System.out.println("new
+                        // finish["+j+"]="+finish[j]+",i="+i+",j="+j+",k="+k+",need["+j+"]["+k+"]="+need[j][k]+",work["+k+"]="+work[k]);
+
+                        if (need[j][k] <= work[k]) {
+                            finish[j] = true;
+                        } else {
+
+                            finish[j] = false;
+
+                            break;
+                        }
+                    }
+                    // this allocation is availalbe, update the work matrix
+                    if (finish[j]) {
+                        for (int k = 0; k < m; k++) {
+                            work[k] = work[k] + allocation[j][k];
+                        }
+                    }
                 }
             }
-            // finally, check if is in a safe mode
-            for (i = 0; i < n; i++)
-                if (finish[i] == false) {
-                    return false;
-                }
         }
+
+        // finally, check if is in a safe mode
+        for (int i = 0; i < n; i++)
+            if (finish[i] == false) {
+                return false;
+            }
         return true;
     }
 
@@ -212,10 +220,10 @@ public class BankImpl implements Bank {
         customerNumber--;
         for (int j = 0; j < m; j++) {
             available[j] = available[j] + release[j];
-            allocation[customerNumber ][j]=allocation[customerNumber ][j]-release[j];
+            allocation[customerNumber][j] = allocation[customerNumber][j] - release[j];
         }
-        
-        System.out.print("Customer # " + (customerNumber+1) + " releasing ");
+
+        System.out.print("Customer # " + (customerNumber + 1) + " releasing ");
         for (int i = 0; i < release.length; i++) {
             System.out.print(release[i] + " ");
         }
@@ -225,7 +233,7 @@ public class BankImpl implements Bank {
         }
         System.out.print("Allocated = ");
         for (int i = 0; i < m; i++) {
-            System.out.print(allocation[customerNumber ][i] + " ");
+            System.out.print(allocation[customerNumber][i] + " ");
         }
         System.out.println();
     }

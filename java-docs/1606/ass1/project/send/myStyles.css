@@ -1,0 +1,279 @@
+*{
+    padding:0;
+    margin:0;
+}
+div.mainbody{
+	width: 800px;
+	margin:0 auto;
+}
+
+li.mainLink{
+	list-style-type:none;
+}
+header.mainHeader{
+	padding:10px;
+	padding-left: 0px;
+	padding-bottom: 2px;
+	margin:0px;
+	height:40px;
+	left:150px;
+	top:50px;
+	margin-bottom: 10px;
+}
+img.headerLogo{
+	height:40px;
+}
+header h1{
+	display: inline-block; 
+	font-family: sans-serif;
+	font-size:2.5em;
+	color:#0033FF;
+}
+
+nav.mainMenu{
+	background-color:black;
+	font-size:2em;
+	color:#e8d871;
+	text-align:center; 
+}
+ul.mainUL li{
+	list-style-type:none;  
+	display:inline;  
+}
+
+ul.mainUL li a{
+	color:#e8d871;
+	list-style-type:none;  
+	display:inline;  
+}
+
+div.slider-container {
+    position: relative;
+    width: 800px;
+    height: 200px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+div.loop-images-container{
+    position: absolute;
+    left: 0; top: 0;
+    width: 500%; 
+    height: 100%;
+    font-size: 0;
+	transform: translate(0,0);
+	animation: loop 10s linear infinite;
+}
+
+img.loop-image{
+    width: 800px;
+    height: 300px;
+}
+
+@keyframes loop {
+    0% {transform: translate(0,0);}
+    15% {transform: translate(0,0);} 
+    20% {transform: translate(-20%,0);} 
+    35% {transform: translate(-20%,0);}
+    40% {transform: translate(-40%,0);}
+    55% {transform: translate(-40%,0);}
+    60% {transform: translate(-60%,0);}
+    75% {transform: translate(-60%,0);}
+    80% {transform: translate(-80%,0);}
+    95% {transform: translate(-80%,0);}
+    100% {transform: translate(0,0);} 
+}
+
+ul.mainULLink{
+	
+	font-size: 20px;
+}
+div.contentBody{
+	
+	background-color:#83aff7;
+	margin:5px;
+	padding:0px;
+	border:0px;
+	border-style: none;
+	display: inline-flex;
+}
+div.contentBodyLeft{
+	font-size: 20px;
+	display: inline-block;
+	width:80%;
+	height:100%;
+	font-size:1em;
+	background-color:white;
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+div.contentBodyRight{
+	font-size: 20px;
+	display: inline-block;
+	width:10%;
+	padding: 5px;
+}
+
+div.contentBodyLeft:after
+{ 
+	content:'addd';
+	color:white;
+}
+
+div.aboutBody{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	border-style: none;
+	display: inline-flex;
+}
+div.aboutBodyLeft{
+	font-size: 15px;
+	display: inline-block;
+	width:50%;
+	height:100%;
+	background-color:white;
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+div.aboutBodyRight{
+	font-size: 15px;
+	display: inline-block;
+	width:50%;
+	margin:0px;
+	padding:0px;
+	border:0px;
+
+}
+article.aboutArticle{
+	margin:0px;
+	margin:0px;
+	padding:10px;
+	border:0px;
+}
+div.aboutBodyLeftTop{
+	background-color:#cadbf7;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+div.aboutBodyLeftBottom{
+	background-color:#cadbf7;
+	margin-right: 5px;
+	
+}
+div.aboutRightTop{
+	background-color:#cadbf7;
+	margin-bottom: 5px;
+	
+}
+div.aboutRightBottom{
+	background-color:#cadbf7;
+	
+}
+div.products1{
+	display: inline-block;
+	background-color:white;
+}
+div.productItem{
+	display: inline-block;
+	width:16.25%;
+	margin:0px;
+	padding:0px;
+	border:0px;
+
+}
+
+div.product1{
+	display: inline-block;
+	width:33%;
+	margin:0px;
+	padding:0px;
+	border:0px;
+
+}
+div.product2{
+	display: inline-block;
+	width:33%;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	
+}
+div.product3{
+	display: inline-block;
+	width:33%;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	
+}
+img.productimg{
+	width: 100%;
+}
+div.contactboutBody{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+
+
+div.formarea{
+	width:100%;
+	left:150px;
+	top:260px;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	font-size:1em;
+	margin-top: 10px;
+}
+
+div.firstRow{
+	display: inline-block;
+	width:100%;
+}
+
+div.firstRow h3{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+input.forminput{
+	width:22%;
+	left:100px;
+	top:5px;
+	font-size:1em;
+	display: inline-block;
+}
+
+input.formemail{
+	width:40%;
+	left:100px;
+	top:60px;
+	font-size:1em;
+	display: inline-block;
+}
+
+textarea.formtext{
+	display: inline-block;
+	width:97%;
+	font-size:1.5em;
+}
+
+button.buttonsub{
+	display: inline-block;
+	width:100px;
+	left:0px;
+	top:320px;
+	font-size:1em;
+}
+
+button.buttonreset{
+	display: inline-block;
+	width:100px;
+	left:150px;
+	top:320px;
+	font-size:1em;
+}
