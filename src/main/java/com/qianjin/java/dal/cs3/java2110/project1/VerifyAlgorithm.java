@@ -6,13 +6,12 @@ public class VerifyAlgorithm {
 
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
-            
-            
-            Thread t1 = new Thread(() -> {
-               Maths.bigFactorial(5);
-            });
-            t1.start();
+            Thread thread = new Thread() {
+                public void run() {
+                    Maths.bigFactorial(5);
+                }
+            };
+            thread.start();
         }
     }
-
 }
